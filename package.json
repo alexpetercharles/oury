@@ -1,0 +1,33 @@
+{
+  "name": "oury",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "dev": "node main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexpetercharles/oury.git"
+  },
+  "author": "alexpetercharles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexpetercharles/oury/issues"
+  },
+  "homepage": "https://github.com/alexpetercharles/oury#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
