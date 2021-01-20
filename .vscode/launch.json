@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Oury",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/dist/oury.js",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      "console": "integratedTerminal",
+    }
+  ]
+}
