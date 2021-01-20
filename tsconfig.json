@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src/oury.ts",
+    "baseUrl": "src/",
     "paths": {
       "~*": ["./*"]
     },
@@ -10,6 +10,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["src/**/*"]
 }
