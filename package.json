@@ -15,7 +15,7 @@
   "source": "src/oury.ts",
   "main": "dist/oury.js",
   "bin": {
-    "oury": "dist/oury.js"
+    "oury": "./bin/oury.js"
   },
   "scripts": {
     "build": "microbundle",
