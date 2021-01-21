@@ -14,12 +14,17 @@
   "homepage": "https://github.com/alexpetercharles/oury#readme",
   "source": "src/oury.ts",
   "main": "dist/oury.js",
+  "bin": {
+    "oury": "dist/oury.js"
+  },
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch"
   },
   "devDependencies": {
+    "@types/clear": "^0.1.1",
     "@types/ejs": "^3.0.5",
+    "@types/figlet": "^1.2.1",
     "@types/inquirer": "^7.3.1",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
@@ -36,7 +41,10 @@
     }
   },
   "dependencies": {
+    "clear": "^0.1.0",
+    "commander": "^7.0.0",
     "ejs": "^3.1.5",
+    "figlet": "^1.5.0",
     "inquirer": "^7.3.3"
   }
 }
