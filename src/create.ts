@@ -1,19 +1,32 @@
 import { Answers } from 'inquirer';
-// import { File, files } from './models/files';
+import glob from 'glob';
 
-/*
-const buildStructure = async (options: Answers) => {
-};
+type Options = {
+  name: string,
+  author: string,
+  description: string,
+  ts: boolean,
+  sass: boolean,
+  p5: boolean,
+  three: boolean,
+}
 
-const writeFile = async (file: File, options: Answers) => {
-};
-*/
+let options: Options;
+
+const getTemplate = async () => glob('./template/**/*', (err, files) => console.log(files));
 
 const create = async (name: string, answers: Answers) => {
-  // await buildStructure(options);
-  // files.forEach((file) => writeFile(file, options));
-  console.log(name);
-  console.log(answers);
+  options = {
+    name,
+    author: answers.artist,
+    description: answers.description,
+    ts: answers.typescript,
+    sass: answers.sass,
+    p5: (answers.libraries as Array<string>).includes('p5'),
+    three: (answers.libraries as Array<string>).includes('three'),
+  };
+  console.log(options);
+  await getTemplate();
 };
 
 export default create;
