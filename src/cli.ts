@@ -13,8 +13,7 @@ const cli = async () => {
   clear();
   // eslint-disable-next-line global-require
   program.version(`oury ${require('../package').version}`)
-    .description(`${Figlet.textSync('oury', 'Bulbhead')}\n\n
-                  A cli tool to scaffold netart projects!`)
+    .description(`${Figlet.textSync('oury', 'Bulbhead')}\n\nA cli tool to scaffold netart projects!`)
     .usage('<command> [options]');
 
   program
