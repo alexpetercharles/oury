@@ -1,6 +1,7 @@
 import dts from 'rollup-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
 import copy from 'rollup-plugin-copy';
+import shebang from 'rollup-plugin-preserve-shebang';
 
 const name = require('./package.json').main.replace(/\.js$/, '');
 
@@ -14,6 +15,7 @@ export default [
   bundle({
     plugins: [
       typescript(),
+      shebang(),
       copy({
         targets: [
           { src: 'src/template/', dest: 'dist/' },
